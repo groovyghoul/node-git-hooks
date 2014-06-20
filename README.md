@@ -12,5 +12,16 @@ Purpose:
 Ensures that all commits are associated with the ticket being worked on.
 The format is:
 
-  [ref: 123]
+  AIS-123
+
+### prepare-commit-msg ###
+
+To install:
+Copy `prepare-commit-msg` to `.git/hooks`
+
+Purpose:
+
+If branch name is `123-rest-of-branch-name`, ensures it will be included in the commit msg as:
+
+  AIS-123-rest-of-branch-name
 
