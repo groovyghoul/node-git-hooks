@@ -12,7 +12,8 @@ function readCommitMsg(callback) {
 }
 
 function isTicketPresent(content) {
-	var isGood = /\[ref: (\d+)\]/.test(content);
+	//var isGood = /\[ref: (\d+)\]/.test(content);
+	var isGood = /AIS-(\d+)/.test(content);
 	if (!isGood)
 		console.warn("Ticket WAS NOT present");
 
